@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_page_bg_new"
+        tools:context=".MainActivity">
+
+        <!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+        <!--    <data>-->
+
+        <!--    </data>-->
+        <ImageView
+            android:id="@+id/temaner"
+            android:layout_width="185dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="166dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/temaner" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temaner"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="81dp"
+            android:layout_marginEnd="25dp"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <Button
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="15dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/literature"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="17sp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/city" />
+
+                <Button
+                    android:id="@+id/various"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/literature" />
+
+                <Button
+                    android:id="@+id/films"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/various" />
+
+                <Button
+                    android:id="@+id/sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/films" />
+
+                <Button
+                    android:id="@+id/geographicalNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="18dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sport" />
+
+                <Button
+                    android:id="@+id/songs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/geographicalNames" />
+
+                <Button
+                    android:id="@+id/childrens"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_corner"
+                    android:gravity="left|center"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/songs" />
+
+
+                <ImageView
+                    android:id="@+id/gem1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/city"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/city"
+                    app:layout_constraintTop_toTopOf="@+id/literature"
+                    app:srcCompat="@drawable/gem" />
+
+
+                <ImageView
+                    android:id="@+id/gem3"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/various"
+                    app:layout_constraintTop_toTopOf="@+id/various"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/films"
+                    app:layout_constraintTop_toTopOf="@+id/films"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem5"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/sport"
+                    app:layout_constraintTop_toTopOf="@+id/sport"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem6"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/geographicalNames"
+                    app:layout_constraintTop_toTopOf="@+id/geographicalNames"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem7"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/songs"
+                    app:layout_constraintTop_toTopOf="@+id/songs"
+                    app:srcCompat="@drawable/gem" />
+
+                <ImageView
+                    android:id="@+id/gem8"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:elevation="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/childrens"
+                    app:layout_constraintTop_toTopOf="@+id/childrens"
+                    app:srcCompat="@drawable/gem" />
+
+
+
+                <TextView
+                    android:id="@+id/sc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem2"
+                    app:layout_constraintTop_toTopOf="@+id/literature" />
+
+                <TextView
+                    android:id="@+id/sc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem3"
+                    app:layout_constraintTop_toTopOf="@+id/various" />
+
+                <TextView
+                    android:id="@+id/sc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem4"
+                    app:layout_constraintTop_toTopOf="@+id/films" />
+
+                <TextView
+                    android:id="@+id/sc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem5"
+                    app:layout_constraintTop_toTopOf="@+id/sport" />
+
+                <TextView
+                    android:id="@+id/sc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="15dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem6"
+                    app:layout_constraintTop_toTopOf="@+id/geographicalNames" />
+
+                <TextView
+                    android:id="@+id/sc7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem7"
+                    app:layout_constraintTop_toTopOf="@+id/songs" />
+
+                <TextView
+                    android:id="@+id/sc8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:elevation="8dp"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingLeft="10dp"
+                    android:text="120/120"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toStartOf="@+id/gem8"
+                    app:layout_constraintTop_toTopOf="@+id/childrens" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            app:srcCompat="@drawable/score_bg_homepage" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="7dp"
+            app:srcCompat="@drawable/gem" />
+
+        <TextView
+            android:id="@+id/score_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/imageView3"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="10sp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/sound_on"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="68dp"
+            app:srcCompat="@drawable/sound_off" />
+
+        <ImageView
+            android:id="@+id/sound_off"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="68dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/sound_offff" />
+
+        <TextView
+            android:id="@+id/usernameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:text="username"
+            style="@style/AudioFileInfoOverlayText"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/winners"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/cup" />
+
+
+    </RelativeLayout>
+</layout>
+

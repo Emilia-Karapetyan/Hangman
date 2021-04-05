@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/winner_lay_border">
+
+
+    <TextView
+        android:id="@+id/num_win"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:text="1"
+        android:gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/us_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toEndOf="@id/num_win"
+        android:layout_toRightOf="@id/num_win"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="16dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="71dp"
+        android:layout_marginRight="71dp"
+        app:srcCompat="@drawable/gem" />
+
+    <TextView
+        android:id="@+id/us_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+</RelativeLayout>

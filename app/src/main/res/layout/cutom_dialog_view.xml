@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clicks"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/child4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/choose_lay"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:background="@drawable/win_game_border"
+                app:layout_constraintBottom_toBottomOf="@+id/child4"
+                app:layout_constraintEnd_toEndOf="@id/child4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/child4"
+                app:layout_constraintTop_toTopOf="@id/child4"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <TextView
+                    android:id="@+id/reply_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:background="#162139"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Գլխավոր էջ"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reply_no" />
+
+                <Button
+                    android:id="@+id/reply_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/pop_up_dialog_back"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Շարունակել"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="133dp"
+                    android:layout_marginLeft="133dp"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginEnd="139dp"
+                    android:layout_marginRight="139dp"
+                    android:gravity="center"
+                    android:text="  Չավարտելու դեպքում \n    կկորցնեք 1 միավոր։\n Խնդրում ենք ավարտել\n      բառի գուշակումը։"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/dialog_exit_btn"
+                    android:layout_width="38dp"
+                    android:layout_height="65dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:backgroundTint="@color/white"
+                    app:fabSize="normal"
+                    app:layout_constraintBottom_toTopOf="@id/child4"
+                    app:layout_constraintEnd_toEndOf="@id/child4"
+                    app:layout_constraintStart_toEndOf="@id/child4"
+                    app:layout_constraintTop_toTopOf="@id/child4"
+                    app:srcCompat="@drawable/close_btn_new" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout><!--<?xml version="1.0" encoding="utf-8"?>-->
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+
+    <!--    app:cardCornerRadius="20dp">-->
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/inside_hint"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:layout_gravity="center"-->
+    <!--      >-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/pop_up_choose"-->
+    <!--            android:layout_width="300dp"-->
+    <!--            android:layout_height="300dp"-->
+    <!--            android:padding="8dp">-->
+
+
+    <!--            <Button-->
+    <!--                android:id="@+id/reply_yes"-->
+    <!--                android:layout_width="150dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="4dp"-->
+    <!--                android:layout_marginLeft="4dp"-->
+    <!--                android:layout_marginTop="56dp"-->
+    <!--                android:background="@drawable/hint_body_border"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:letterSpacing="0.02"-->
+    <!--                android:lineSpacingExtra="6sp"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:paddingBottom="20dp"-->
+    <!--                android:text="yes"-->
+    <!--                android:textColor="#ffffff"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="normal"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/reply_no"-->
+    <!--                android:layout_width="150dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="132dp"-->
+    <!--                android:layout_marginLeft="132dp"-->
+    <!--                android:background="@drawable/hint_body_border"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:letterSpacing="0.02"-->
+    <!--                android:lineSpacingExtra="6sp"-->
+    <!--                android:paddingTop="20dp"-->
+    <!--                android:paddingBottom="20dp"-->
+    <!--                android:text="No"-->
+    <!--                android:textColor="#ffffff"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="normal"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.58" />-->
+
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--    </FrameLayout>-->
+
+
+    <!--</FrameLayout>-->
+

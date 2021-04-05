@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clicks"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/hint_text"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/hint_body_border"-->
+<!--                            android:gravity="center"-->
+<!--                            android:paddingLeft="25dp"-->
+<!--                            android:paddingTop="180dp"-->
+<!--                            android:paddingRight="25dp"-->
+<!--                            android:paddingBottom="180dp"-->
+<!--                            android:text="Տիմոն և Պումբա \n մուլտֆիլմի հերոս Տիմոնը"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="15dp"-->
+<!--                            android:textStyle="normal"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <!--                                    <ImageView-->
+            <!--                                        android:id="@+id/imgHint"-->
+            <!--                                        android:layout_width="wrap_content"-->
+            <!--                                        android:layout_height="wrap_content"-->
+            <!--                                        android:background="@drawable/hint_border"-->
+            <!--                                        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                                        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                                        app:layout_constraintHorizontal_bias="1.0"-->
+            <!--                                        app:layout_constraintStart_toStartOf="parent"-->
+            <!--                                        app:layout_constraintTop_toTopOf="parent"-->
+            <!--                                        android:padding="5dp"-->
+            <!--                                        app:layout_constraintVertical_bias="0.0"-->
+            <!--                                        android:gravity="center"-->
+            <!--                                        android:src="@drawable/no_path_3"-->
+            <!--                                        />-->
+
+
+            <ImageView
+                android:id="@+id/audiImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hint_body_border"
+                android:paddingLeft="100dp"
+                android:paddingTop="80dp"
+                android:paddingRight="100dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/reply2" />
+
+            <ImageView
+                android:id="@+id/audioPlay"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:foregroundGravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/audiImg"
+                app:layout_constraintVertical_bias="0.651"
+                app:srcCompat="@drawable/ic_play" />
+
+            <TextView
+                android:id="@+id/audioClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="-2sp"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:textSize="26sp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/audioPlay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/audiImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dialog_exit_btn"
+            android:layout_width="38dp"
+            android:layout_height="65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@id/child"
+            app:layout_constraintEnd_toEndOf="@id/child"
+            app:layout_constraintStart_toEndOf="@id/child"
+            app:layout_constraintTop_toTopOf="@id/child"
+            app:srcCompat="@drawable/close_btn_new" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

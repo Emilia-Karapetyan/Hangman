@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:width="45dp"
+        android:height="45dp"
+        android:drawable="@drawable/ic_baseline_volume_down_24"
+        android:left="-170px"
+        android:top="-120px"/>
+    <item
+        android:width="100dp"
+        android:height="100dp"
+        android:drawable="@drawable/reply2"
+        android:left="0px" />
+
+    <item
+        android:id="@+id/pauseSong"
+        android:width="50dp"
+        android:height="50dp"
+        android:drawable="@drawable/ic_baseline_pause"
+        android:gravity="center"
+        android:left="26px"
+        android:right="26px" />
+</layer-list>

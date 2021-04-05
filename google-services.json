@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685011753144",
+    "project_id": "hangman-f3924",
+    "storage_bucket": "hangman-f3924.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685011753144:android:c827b4f982e71939753c4d",
+        "android_client_info": {
+          "package_name": "com.example.hangman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685011753144-ibd9lqq3uqm7td2djjj9ha15ib6lc1tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSMDGEY5W841WK1tr_cMthG9ZsLJbMmrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685011753144-ibd9lqq3uqm7td2djjj9ha15ib6lc1tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
