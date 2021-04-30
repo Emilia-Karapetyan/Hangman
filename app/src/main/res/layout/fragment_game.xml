@@ -944,13 +944,13 @@
         <ImageView
             android:id="@+id/header"
             android:layout_width="fill_parent"
-            android:layout_height="61dp"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/header2_bg22" />
+            app:srcCompat="@drawable/tablet_header2" />
 
         <ImageView
             android:id="@+id/backButton"
@@ -959,7 +959,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="4dp"
-            android:scaleType="fitStart"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
